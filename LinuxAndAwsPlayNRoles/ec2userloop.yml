@@ -1,0 +1,16 @@
+- name: Create a new IAM User
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+          - name: Create a IAM user
+            iam:
+                    iam_type: user
+                    name: "{{ item }}"
+                    state: present
+                    password: Passw0rd
+                    access_key_state: create
+            loop:
+                    - sunnysinghchaggar
+                    - abdul
+                    - paresh

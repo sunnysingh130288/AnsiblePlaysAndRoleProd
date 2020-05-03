@@ -1,0 +1,25 @@
+---
+- hosts: localhost
+  connection: local
+  name: create an ec2 instance
+  gather_facts: false
+  vars:
+          region: us-east-2
+          instance_type: t2.micro
+          ami: ami-0fc20dd1da406780b
+          keypair: NewKey
+  tasks:
+          - name: creation of ec2 machine in AWS
+            ec2:
+                    key_name: "{{keypair}}"
+                    group: default
+                    instance_type: "{{instance_type}}"
+                    image: "{{ami}}"
+                    wait: true
+                    region: "{{region}}"
+                    count: 1
+                    count_tag:
+                            Name: Demo
+                    instance_tags:
+                            Name: Demo
+

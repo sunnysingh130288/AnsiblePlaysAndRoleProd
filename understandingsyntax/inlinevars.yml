@@ -1,0 +1,18 @@
+- name: inline vars example
+  hosts: localhost
+  vars:
+          named_list:
+                  - item1
+                  - item2
+                  - item3
+  tasks:
+          - name: test named list
+            debug:
+                    msg: "{{named_list}}"
+          - name: test dot notation
+            debug:
+                    msg: "{{named_list.0}}"
+          - name: test bracket notation
+            debug:
+                    msg: "{{named_list[0]}}"
+
