@@ -1,0 +1,11 @@
+---
+# vars file for ec2deploy
+ec2_keypair: "NewKey"
+ec2_security_group: "default"
+ec2_instance_type: "t2.micro"
+ec2_image: "ami-0fc20dd1da406780b"
+ec2_region: "us-east-2"
+ec2_tag_Name: "Testserver"
+ec2_tag_Type: "Testserver"
+ec2_tag_Environment: "production"
+ec2_volume_size: 8
