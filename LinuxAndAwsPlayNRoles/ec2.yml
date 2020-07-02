@@ -2,13 +2,13 @@
 - name: Create a new Demo EC2 instance
   hosts: localhost
   connection: local
-  gather_facts: False
+  gather_facts: false
 
   vars:
       region: us-east-2
       instance_type: t2.micro
       ami: ami-0fc20dd1da406780b
-      keypair: NewKey  # pem file name
+      keypair: keyfile  # pem file name
 
   tasks:
 
@@ -25,4 +25,6 @@
             Name: Demo
          instance_tags:
             Name: Demo
+            For: Sunny
+            Team: DevOps
       register: ec2

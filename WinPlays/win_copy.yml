@@ -6,4 +6,4 @@
           - name: copy file to windows machine
             win_copy:
                     src: /home/ubuntu/file.txt
-                    dest: C:\temp\
+                    dest: C:\

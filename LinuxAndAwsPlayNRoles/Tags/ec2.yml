@@ -7,7 +7,7 @@
   vars:
     key_name: id_rsa
     region: us-east-2
-    image: ami-07c1207a9d40bc3bd # https://cloud-images.ubuntu.com/locator/ec2/
+    image: ami-0e84e211558a022c0 # https://cloud-images.ubuntu.com/locator/ec2/
     id: "webserver"
     sec_group: "{{ id }}-sec"
 

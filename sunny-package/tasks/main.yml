@@ -1,0 +1,5 @@
+---
+# tasks file for sunny-package
+- include: install_nginx.yaml
+- include: deploy_file.yaml
+- include: restart_service.yaml

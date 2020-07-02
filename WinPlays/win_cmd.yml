@@ -2,7 +2,7 @@
   hosts: winhost
   tasks:
           - name: running a non shell command
-            win_shell: ipconfig /all >> C:\temp\cmd.txt
+            win_shell: ipconfig /all >> C:\cmd.txt
             args:
                     executable: cmd
             register: homedir_out

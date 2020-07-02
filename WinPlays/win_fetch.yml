@@ -5,6 +5,6 @@
   tasks:
           - name: fetch the file from temp directory
             fetch:
-                    src: C:\temp\bond.txt
-                    dest: /home/ubuntu/bond.txt
+                    src: C:\file.txt
+                    dest: ./file.txt
                     flat: yes
