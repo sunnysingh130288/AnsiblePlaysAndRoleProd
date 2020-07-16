@@ -1,0 +1,10 @@
+- name: looping through file
+  hosts: localhost
+  tasks:
+          - name: installing
+            apt:
+                    name: "{{item}}"
+                    state: present
+            become: yes
+            with_items: "{{ lookup('file', '/home/ubuntu/loopfile.txt').splitlines() }}"
+            
