@@ -4,7 +4,7 @@
           - name: creating user
             iam:
                     iam_type: user
-                    name: sandeep
+                    name: sandeepnew
                     state: present
                     password: Passw0rd
                     access_key_state: create
