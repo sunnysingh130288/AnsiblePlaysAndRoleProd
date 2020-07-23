@@ -1,0 +1,10 @@
+- name: create ec2 user
+  hosts: localhost
+  tasks:
+          - name: creating user
+            iam:
+                    iam_type: user
+                    name: sandeep
+                    state: present
+                    password: Passw0rd
+                    access_key_state: create
