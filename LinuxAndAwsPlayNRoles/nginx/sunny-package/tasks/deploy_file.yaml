@@ -1,0 +1,3 @@
+- name: deploying website file
+  copy: src=/etc/ansible/roles/sunny-package/files/index.html dest=/var/www/html
+  become: true

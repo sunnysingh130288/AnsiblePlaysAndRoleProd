@@ -1,0 +1,4 @@
+- name: Setting up web server
+  hosts: all
+  roles:
+          - sunny-package
